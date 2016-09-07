@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" type="image/png" sizes="16x16" href="plugins/images/favicon.png">
+<title>Doctor Form</title>
+<!-- Bootstrap Core CSS -->
+<link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Menu CSS -->
+<link href="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+<!-- animation CSS -->
+<link href="css/animate.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/style.css" rel="stylesheet">
+<!-- color CSS -->
+<link href="css/colors/default.css" id="theme"  rel="stylesheet">
+
+<style>
+ /*------------------gurwinder-------------------*/
+ 
+ .padding_none{
+	padding:0;
+}
+
+.blood_sub_header22 {
+    text-align: left;
+    font-size: 16px;
+    float: left;
+    
+}
+
+.blood_sub_header223{
+    text-align: center;
+    font-size: 13px;
+	float:left;
+	width:100%;
+	padding: 3px 0;
+	border-bottom:1px solid #eee;
+}
+
+
+.blood_sub_header2234{
+    text-align: left;
+    font-size: 14px;
+	float:left;
+	width:100%;
+	padding: 8px 0 0 0;
+	
+}
+
+.blood_test_input{
+    width:70%;
+    background: none;
+    border: 1px solid #D9E3E2;
+    outline: none;
+    padding: 5px;
+	float:left;
+
+}
+
+.blood_test_input2{
+    width:100%;
+    background: none;
+    border: 1px solid #D9E3E2;
+    outline: none;
+     padding: 5px;
+	float:left;
+
+}
+
+.blood_test_span0 {
+    padding: 5px 0;
+    float: left;
+}
+
+.blood_test_span {
+    float: left;
+    width: 25%;
+    margin: 0 2px;
+    padding: 7px 0;
+    background: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.blood_test_span2{
+    float: left;
+    width: 65%;
+    margin: 0 0 0 40px;
+    padding: 5px 0;
+    background: #BAE378;
+	border: 1px solid #95D431;
+    border-radius: 3px;
+	color:#fff;
+    text-align: center;
+}
+
+
+.labor_blood_test22{
+	list-style:none;
+	width:100%;
+	margin:0;
+	padding:0;
+	float:left;
+	border-bottom:1px solid #eee;
+}
+
+.labor_blood_test22 li{
+	width:33.33%;
+	float:left;
+	margin:0;
+	
+}
+
+.blood_sub_header_li{
+	width:100%;
+	float:left;
+	border-left:1px solid #eee;
+	margin:0;
+	padding:0;
+}
+
+.blood_sub_header_li li{
+	width:50%;
+	float:left;
+	text-align:center;
+	list-style:none;
+	padding: 8px 0;
+}
+
+
+.blood_sub_header_li li:nth-child(1){
+	border-right:1px solid #eee;
+}
+
+.border_right_light_grey{
+	border-right:1px solid #eee;
+}
+
+
+.notes_label_1111{
+	width:100%;
+	float:left;
+	padding:10px 0 0 0;
+}
+
+.notes_textarea{
+    width:100%;
+	border:1px solid #eee;
+	height:100px;
+}
+
+.form_inner_med_exam{
+	float:left;
+	width:33%;
+}
+
+.form_inner_med_exam label {
+    width: 100%;
+    font-weight: normal;
+    /* text-transform: uppercase; */
+    /* font-family: 'Open Sans', sans-serif; */
+    color: #888;
+    font-size: 14px;
+}
+
+.form_inner_med_exam input {
+    width: 90%;
+    background: none;
+    border: 1px solid #D9E3E2;
+    outline: none;
+     padding: 10px;
+}
+.margin_top {
+    margin-top: 20px;
+    float: left;
+    width: 100%;
+}
+
+.dist_vis_table{
+    width: 100%;
+    text-align: center;
+}
+.dist_vis_table tr{
+	border-bottom:1px solid #eee;
+}
+.dist_vis_table td{
+	padding:10px 0;
+	width:33.33%;
+}
+	
+	
+.dist_vis_table2{
+    width: 100%;
+    text-align: center;
+}
+.dist_vis_table2 tr{
+	border-bottom:1px solid #eee;
+}
+.dist_vis_table2 td{
+	padding:10px 0;
+}
+
+.table_txt_align_left{
+	text-align:left;
+	font-size:13px;
+}
+.med_notes_text{
+   text-align:left;
+	color:#000;
+	float:left;
+}
+
+.med_span1{
+	width:100%;
+	padding:3px 0;
+	float:left;
+	font-size:14px;
+}
+
+.med_span2{
+	width:100%;
+	padding:3px 0;
+	float:left;
+	font-size:13px;
+}
+
+
+.med_span3{
+	width:100%;
+	padding:3px 0;
+	float:left;
+	font-size:12px;
+}
+
+.med_fit_span {
+    font-size: 13px;
+    float: left;
+    margin: 3px 3px 0px 0;
+}
+
+.med_fit_in{
+	float:left;
+	margin-left:5px;
+}
+
+.certified_div{
+	float:left;
+	width:100%;
+}
+
+.certified_div span{
+	float:left;
+}
+
+.certified_div input{
+	float:left;
+	margin-left:20px;
+}
+
+  /*------------------gurwinder-------------------*/
+</style>
+
+</head>
+<body class="fix-sidebar">
+
+<div id="wrapper">
+  <!-- Top Navigation -->
+ <nav class="navbar navbar-default navbar-static-top m-b-0">
+    <div class="navbar-header"> <a class="navbar-toggle hidden-sm hidden-md hidden-lg " href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse"><i class="ti-menu"></i></a>
+      <div class="top-left-part"><a class="logo" href="index.html"><b><!--This is dark logo icon--><img src="plugins/images/eliteadmin-logo.png" alt="home" class="dark-logo" /><!--This is light logo icon--><img src="plugins/images/eliteadmin-logo-dark.png" alt="home" class="light-logo" /></b><span class="hidden-xs"><!--This is dark logo text--><img src="plugins/images/eliteadmin-text.png" alt="home" class="dark-logo" /><!--This is light logo text--><img src="plugins/images/eliteadmin-text-dark.png" alt="home" class="light-logo" /></span></a></div>
+      <ul class="nav navbar-top-links navbar-left hidden-xs">
+        <li><a href="javascript:void(0)" class="open-close hidden-xs waves-effect waves-light"><i class="icon-arrow-left-circle ti-menu"></i></a></li>
+        <li>
+          <form role="search" class="app-search hidden-xs">
+            <input type="text" placeholder="Search..." class="form-control">
+            <a href="#"><i class="fa fa-search"></i></a>
+          </form>
+        </li>
+      </ul>
+      <ul class="nav navbar-top-links navbar-right pull-right">
+        <li class="dropdown"> <a class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#"><i class="icon-envelope"></i>
+          <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
+          </a>
+          <ul class="dropdown-menu mailbox animated bounceInDown">
+            <li>
+              <div class="drop-title">You have 4 new messages</div>
+            </li>
+            <li>
+              <div class="message-center"> <a href="#">
+                <div class="user-img"> <img src="plugins/images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                <div class="mail-contnet">
+                  <h5>Pavan kumar</h5>
+                  <span class="mail-desc">Just see the my admin!</span> <span class="time">9:30 AM</span> </div>
+                </a> <a href="#">
+                <div class="user-img"> <img src="plugins/images/users/sonu.jpg" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
+                <div class="mail-contnet">
+                  <h5>Sonu Nigam</h5>
+                  <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span> </div>
+                </a> <a href="#">
+                <div class="user-img"> <img src="plugins/images/users/arijit.jpg" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
+                <div class="mail-contnet">
+                  <h5>Arijit Sinh</h5>
+                  <span class="mail-desc">I am a singer!</span> <span class="time">9:08 AM</span> </div>
+                </a> <a href="#">
+                <div class="user-img"> <img src="plugins/images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
+                <div class="mail-contnet">
+                  <h5>Pavan kumar</h5>
+                  <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
+                </a> </div>
+            </li>
+            <li> <a class="text-center" href="javascript:void(0);"> <strong>See all notifications</strong> <i class="fa fa-angle-right"></i> </a></li>
+          </ul>
+          <!-- /.dropdown-messages --> 
+        </li>
+        <!-- /.dropdown -->
+        <li class="dropdown"> <a class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#"><i class="icon-note"></i>
+          <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
+          </a>
+          <ul class="dropdown-menu dropdown-tasks animated slideInUp">
+            <li> <a href="#">
+              <div>
+                <p> <strong>Task 1</strong> <span class="pull-right text-muted">40% Complete</span> </p>
+                <div class="progress progress-striped active">
+                  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> <span class="sr-only">40% Complete (success)</span> </div>
+                </div>
+              </div>
+              </a> </li>
+            <li class="divider"></li>
+            <li> <a href="#">
+              <div>
+                <p> <strong>Task 2</strong> <span class="pull-right text-muted">20% Complete</span> </p>
+                <div class="progress progress-striped active">
+                  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"> <span class="sr-only">20% Complete</span> </div>
+                </div>
+              </div>
+              </a> </li>
+            <li class="divider"></li>
+            <li> <a href="#">
+              <div>
+                <p> <strong>Task 3</strong> <span class="pull-right text-muted">60% Complete</span> </p>
+                <div class="progress progress-striped active">
+                  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"> <span class="sr-only">60% Complete (warning)</span> </div>
+                </div>
+              </div>
+              </a> </li>
+            <li class="divider"></li>
+            <li> <a href="#">
+              <div>
+                <p> <strong>Task 4</strong> <span class="pull-right text-muted">80% Complete</span> </p>
+                <div class="progress progress-striped active">
+                  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"> <span class="sr-only">80% Complete (danger)</span> </div>
+                </div>
+              </div>
+              </a> </li>
+            <li class="divider"></li>
+            <li> <a class="text-center" href="#"> <strong>See All Tasks</strong> <i class="fa fa-angle-right"></i> </a> </li>
+          </ul>
+          <!-- /.dropdown-tasks --> 
+        </li>
+        <!-- /.dropdown --> 
+        <!-- .Megamenu -->
+        <li class="mega-dropdown"> <a class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#"><span class="hidden-xs">Mega</span> <i class="icon-options-vertical"></i></a> </li>
+        <!-- /.Megamenu -->
+        
+        <li class="right-side-toggle"> <a class="waves-effect waves-light" href="javascript:void(0)"><i class="ti-settings"></i></a></li>
+        <!-- /.dropdown -->
+      </ul>
+    </div>
+    <!-- /.navbar-header --> 
+    <!-- /.navbar-top-links --> 
+    <!-- /.navbar-static-side --> 
+  </nav>
+  <!-- Left navbar-header -->
+  <div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav navbar-collapse slimscrollsidebar">
+      <div class="user-profile">
+        <div class="dropdown user-pro-body">
+          <div><img src="plugins/images/users/varun.jpg" alt="user-img" class="img-circle"></div>
+          <a href="#" class="dropdown-toggle u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dr. B S Bhatia<span class="caret"></span></a>
+          <ul class="dropdown-menu animated flipInY">
+            <li><a href="#"><i class="ti-user"></i> My Profile</a></li>
+            <li><a href="#"><i class="ti-wallet"></i> My Balance</a></li>
+            <li><a href="#"><i class="ti-email"></i> Inbox</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#"><i class="ti-settings"></i> Account Setting</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+          </ul>
+        </div>
+      </div>
+      <ul class="nav" id="side-menu">
+        <li class="sidebar-search hidden-sm hidden-md hidden-lg"> 
+          <!-- input-group -->
+          <div class="input-group custom-search-form">
+            <input type="text" class="form-control" placeholder="Search...">
+            <span class="input-group-btn">
+            <button class="btn btn-default" type="button"> <i class="fa fa-search"></i> </button>
+            </span> </div>
+          <!-- /input-group --> 
+        </li>
+        <li class="nav-small-cap m-t-10">--- Main Menu</li>
+        <li><a href="#inbox.html" class="waves-effect"><i data-icon=")" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">Apps<span class="fa arrow"></span></span></a>
+          <ul class="nav nav-second-level">
+            <li><a href="chat.html">Chat-message</a></li>
+            <li><a href="javascript:void(0)" class="waves-effect">Inbox<span class="fa arrow"></span></a>
+              <ul class="nav nav-third-level">
+                <li> <a href="inbox.html">Mail box</a></li>
+                <li> <a href="inbox-detail.html">Inbox detail</a></li>
+                <li> <a href="compose.html">Compose mail</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li> <a href="index.html" class="waves-effect active"><i class="linea-icon linea-basic fa-fw" data-icon="v"></i> <span class="hide-menu">Dashboard </span></a></li>
+        <li><a href="#inbox.html" class="waves-effect"><i data-icon="&#xe00b;" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">Laborartory Details<span class="fa arrow"></span><span class="label label-rouded label-danger pull-right">New</span></span></a>
+          <ul class="nav nav-second-level">
+            <li> <a href="edit-record.html" class="waves-effect">Add New Record</a></li>
+            <li> <a href="view-patient.html" class="waves-effect">View Patient Record</a></li>
+            <li> <a href="view-patient-detail.html" class="waves-effect">Edit Patient Record</a></li>
+          </ul>
+        </li>
+        <li class="nav-small-cap">--- Proffessional</li>
+        <li><a href="#gallery.html" class="waves-effect"><i class="fa fa-circle-o text-info"></i> <span class="hide-menu">Gallery</span></a></li>
+        <li><a href="faq.html" class="waves-effect"><i class="fa fa-circle-o text-success"></i> <span class="hide-menu">Faqs</span></a></li>
+        <li><a href="#login.html" class="waves-effect"><i class="icon-logout fa-fw"></i> <span class="hide-menu">Log out</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- Left navbar-header end -->
+  <!-- Page Content -->
+      <div id="page-wrapper">
+    <div class="container-fluid">
+      <div class="row bg-title">
+        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+          <h4 class="page-title">Form Layout</h4>
+        </div>
+        
+        <!-- /.col-lg-12 -->
+      </div>
+	  
+	  <style>
+	  .blood_test_span2 {
+    background: #bae378 none repeat scroll 0 0;
+    border: 1px solid #95d431;
+    border-radius: 3px;
+    color: #fff;
+    float: left;
+    margin: 0 0 0 15px;
+    padding: 8px 10px;
+    text-align: center;
+}
+.input-group { width:100%;}
+.result{ width:100px;}
+.normal{ width:150px;}
+	  </style>
+	  
+      <!--.row-->
+      
+	  
+	  
+	  <div class="row">
+		<div class="col-lg-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">Form Elements</div>
+					<div class="panel-body">
+  <ul class="labor_blood_test22"><li><span class="blood_sub_header22">Is there any past/present history of any of the following</span></li>
+  <li><span class="blood_sub_header223">Candidate Declaration</span><ul class="blood_sub_header_li"><li>Yes</li><li>No</li></ul></li>
+  <li><span class="blood_sub_header223">Examiner Record</span><ul class="blood_sub_header_li"><li>Yes</li><li class="border_right_light_grey">No</li></ul></li></ul>
+  
+  
+  <ul class="labor_blood_test22">
+  <li><span class="blood_sub_header2234">Severe one-sided headache (Migraine)</span></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li><input type="checkbox"></li></ul></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li class="border_right_light_grey"><input type="checkbox"></li></ul></li></ul>
+  
+   <ul class="labor_blood_test22">
+  <li><span class="blood_sub_header2234">Head Injury/Consussion/Loss of Memory</span></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li><input type="checkbox"></li></ul></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li class="border_right_light_grey"><input type="checkbox"></li></ul></li></ul>
+  
+   <ul class="labor_blood_test22">
+  <li><span class="blood_sub_header2234">Fits/Epilepsy/Dizziness/Fainting</span></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li><input type="checkbox"></li></ul></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li class="border_right_light_grey"><input type="checkbox"></li></ul></li></ul>
+  
+   <ul class="labor_blood_test22">
+  <li><span class="blood_sub_header2234">Eye/Vision Problems (Glasses, etc.)</span></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li><input type="checkbox"></li></ul></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li class="border_right_light_grey"><input type="checkbox"></li></ul></li></ul>
+  
+   <ul class="labor_blood_test22">
+  <li><span class="blood_sub_header2234">Hearing Impairment</span></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li><input type="checkbox"></li></ul></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li class="border_right_light_grey"><input type="checkbox"></li></ul></li></ul>
+  
+   <ul class="labor_blood_test22">
+  <li><span class="blood_sub_header2234">Ear/Nose/Throat problems</span></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li><input type="checkbox"></li></ul></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li class="border_right_light_grey"><input type="checkbox"></li></ul></li></ul>
+  
+   <ul class="labor_blood_test22">
+  <li><span class="blood_sub_header2234">Stomach/Bowel disorders</span></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li><input type="checkbox"></li></ul></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li class="border_right_light_grey"><input type="checkbox"></li></ul></li></ul>
+  
+   <ul class="labor_blood_test22">
+  <li><span class="blood_sub_header2234">Gall stones/Kidney disorders</span></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li><input type="checkbox"></li></ul></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li class="border_right_light_grey"><input type="checkbox"></li></ul></li></ul>
+  
+   <ul class="labor_blood_test22">
+  <li><span class="blood_sub_header2234">Jaundice/Liver disease</span></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li><input type="checkbox"></li></ul></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li class="border_right_light_grey"><input type="checkbox"></li></ul></li></ul>
+  
+   <ul class="labor_blood_test22">
+  <li><span class="blood_sub_header2234">Piles/Varicose Veins</span></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li><input type="checkbox"></li></ul></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li class="border_right_light_grey"><input type="checkbox"></li></ul></li></ul>
+  
+   <ul class="labor_blood_test22">
+  <li><span class="blood_sub_header2234">Blood Disorder</span></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li><input type="checkbox"></li></ul></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li class="border_right_light_grey"><input type="checkbox"></li></ul></li></ul>
+  
+   <ul class="labor_blood_test22">
+  <li><span class="blood_sub_header2234">Female Disorder</span></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li><input type="checkbox"></li></ul></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li class="border_right_light_grey"><input type="checkbox"></li></ul></li></ul>
+  
+   <ul class="labor_blood_test22">
+  <li><span class="blood_sub_header2234">Hernia/Hydrocle/Appendicitis</span></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li><input type="checkbox"></li></ul></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li class="border_right_light_grey"><input type="checkbox"></li></ul></li></ul>
+  
+   <ul class="labor_blood_test22">
+  <li><span class="blood_sub_header2234">High/Low blood pressure/Heart disease</span></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li><input type="checkbox"></li></ul></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li class="border_right_light_grey"><input type="checkbox"></li></ul></li></ul>
+  
+   <ul class="labor_blood_test22">
+  <li><span class="blood_sub_header2234">Asthma/Bronchitis/Tuberculosis</span></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li><input type="checkbox"></li></ul></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li class="border_right_light_grey"><input type="checkbox"></li></ul></li></ul>
+  
+   <ul class="labor_blood_test22">
+  <li><span class="blood_sub_header2234">Allergy Skin disease</span></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li><input type="checkbox"></li></ul></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li class="border_right_light_grey"><input type="checkbox"></li></ul></li></ul>
+  
+   <ul class="labor_blood_test22">
+  <li><span class="blood_sub_header2234">Infection/Contagious disease</span></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li><input type="checkbox"></li></ul></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li class="border_right_light_grey"><input type="checkbox"></li></ul></li></ul>
+  
+   <ul class="labor_blood_test22">
+  <li><span class="blood_sub_header2234">Addiction to alcohol/drugs/tobacco</span></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li><input type="checkbox"></li></ul></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li class="border_right_light_grey"><input type="checkbox"></li></ul></li></ul>
+  
+   <ul class="labor_blood_test22">
+  <li><span class="blood_sub_header2234">Fracture/dislocation/Injury/Amputation</span></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li><input type="checkbox"></li></ul></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li class="border_right_light_grey"><input type="checkbox"></li></ul></li></ul>
+  
+   <ul class="labor_blood_test22">
+  <li><span class="blood_sub_header2234">Major/Minor Operations</span></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li><input type="checkbox"></li></ul></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li class="border_right_light_grey"><input type="checkbox"></li></ul></li></ul>
+  
+   <ul class="labor_blood_test22">
+  <li><span class="blood_sub_header2234">Diabetes</span></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li><input type="checkbox"></li></ul></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li class="border_right_light_grey"><input type="checkbox"></li></ul></li></ul>
+  
+   <ul class="labor_blood_test22">
+  <li><span class="blood_sub_header2234">Nervous/Mental Illness/Sleep disorder</span></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li><input type="checkbox"></li></ul></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li class="border_right_light_grey"><input type="checkbox"></li></ul></li></ul>
+  
+   <ul class="labor_blood_test22">
+  <li><span class="blood_sub_header2234">Malignant disease (Cancer)</span></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li><input type="checkbox"></li></ul></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li class="border_right_light_grey"><input type="checkbox"></li></ul></li></ul>
+  
+   <ul class="labor_blood_test22">
+  <li><span class="blood_sub_header2234">Signed off on Medical Grounds/Declared unfit</span></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li><input type="checkbox"></li></ul></li>
+  <li><ul class="blood_sub_header_li"><li><input type="checkbox"></li><li class="border_right_light_grey"><input type="checkbox"></li></ul></li></ul>
+			  
+		
+	<div class="col-lg-12 padding_none">
+	  <label class="notes_label_1111">Notes</label>
+	  <textarea class="notes_textarea"></textarea>
+	</div>
+		
+			  
+		</div>
+	</div>	
+	 </div>
+	   
+		
+	   </div>
+	   
+	   
+	   
+	   <div class="row">
+		<div class="col-lg-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">Medical Examination</div>
+					<div class="panel-body">
+ 
+     <div class="main_form">
+			        <div class="form_inner_med_exam"><label>Height</label> <input type="text" name="Name" value=""  class="input_name" ></div>
+					 <div class="form_inner_med_exam"><label>Weight in Kgs</label> <input type="text" name="Name" value="" class="input_name" ></div>
+					 <div class="form_inner_med_exam"><label>Chest Insp-Exp</label> <input type="text" name="Name" value="" class="input_name" ></div>
+			   </div>
+			   
+  <div class="main_form margin_top">
+			        <div class="form_inner_med_exam"><label>Blood Pressure</label> <input type="text" name="Name" value=""  class="input_name" ></div>
+					<div class="form_inner_med_exam"><label>Pulse-Beats/min</label> <input type="text" name="Name" value="" class="input_name" ></div>
+					 <div class="form_inner_med_exam"><label>Resp. Rate/min</label> <input type="text" name="Name" value="" class="input_name" ></div>
+			   </div>
+			   
+			    <div class="main_form margin_top">
+			     <div class="form_inner_med_exam"><label>BMI</label> <input type="text" name="Name" value=""  class="input_name" ></div>
+				<div class="form_inner_med_exam"><label>General Condition</label> <input type="text" name="Name" value="" class="input_name" ></div>
+			  </div>
+			</div>
+	</div>	
+	 </div>
+	   
+		
+	   </div>
+	   
+	   
+	   
+	   <div class="row">
+		<div class="col-lg-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">Distant Vision</div>
+					<div class="panel-body">
+            <table class="dist_vis_table">
+			
+			  <tr><td></td><td>Uncorrected</td><td>Corrected</td></tr>
+			   <tr><td class="table_txt_align_left">Right Eye</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+			    <tr><td class="table_txt_align_left">Left Eye</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+			</table>
+        
+		</div>
+	</div>	
+	 </div>
+	 
+	 
+	 <div class="col-lg-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">Field of Vision</div>
+					<div class="panel-body">
+      <table class="dist_vis_table">
+			
+			  <tr><td></td><td style="color:#fff;">.</td></tr>
+			   <tr><td class="table_txt_align_left">Normal</td><td><input type="checkbox"></td></tr>
+			    <tr><td class="table_txt_align_left">Abnormal</td><td><input type="checkbox"></td></tr>
+			</table>
+       
+		</div>
+	</div>	
+	 </div>
+	 
+	 
+	 
+	 <div class="col-lg-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">Colour Vision</div>
+					<div class="panel-body">
+            <table class="dist_vis_table">
+			
+			  <tr><td></td><td>Normal</td><td>Abnormal</td></tr>
+			   <tr><td class="table_txt_align_left">Ishihara</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+			    <tr><td class="table_txt_align_left">Other</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+			</table>
+      
+		</div>
+	</div>	
+	 </div>
+	 </div>
+	  
+	  
+	  
+	  
+	  
+	  <div class="row">
+		<div class="col-lg-8">
+				<div class="panel panel-default">
+					<div class="panel-heading">Audiometry</div>
+					<div class="panel-body">
+            <table class="dist_vis_table2">
+			
+			  <tr><td></td><td>Hz</td><td>500</td><td>1000</td><td>2000</td><td>3000</td><td>4000</td><td>5000</td><td>6000</td><td>8000</td></tr>
+			  
+			   <tr><td class="table_txt_align_left">Right Eye</td><td><input type="checkbox"></td><td><input type="checkbox"></td><td><input type="checkbox"></td><td><input type="checkbox"></td><td><input type="checkbox"></td><td><input type="checkbox"></td><td><input type="checkbox"></td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+			   
+			    <tr><td class="table_txt_align_left">Left Eye</td><td><input type="checkbox"></td><td><input type="checkbox"></td><td><input type="checkbox"></td><td><input type="checkbox"></td><td><input type="checkbox"></td><td><input type="checkbox"></td><td><input type="checkbox"></td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+			</table>
+        
+		</div>
+	</div>	
+	 </div>
+	 
+	 
+	 <div class="col-lg-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">Hearing</div>
+					<div class="panel-body">
+      <table class="dist_vis_table">
+			
+			  <tr><td></td><td style="color:#fff;">.</td></tr>
+			   <tr><td class="table_txt_align_left">Right Ear</td><td><input type="text" name="Name" value="" class="input_name"></td></tr>
+			    <tr><td class="table_txt_align_left">Left Ear</td><td><input type="text" name="Name" value="" class="input_name"></td></tr>
+			</table>
+       
+		</div>
+	</div>	
+	 </div>
+	 
+	
+	 </div>
+	 
+	 
+	 
+	 
+	 
+	 
+	  <div class="row">
+		<div class="col-lg-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">Systematic Examination</div>
+					<div class="panel-body">
+            <table class="dist_vis_table">
+			
+			  <tr><td></td><td>Normal</td><td>Abnormal</td></tr>
+			   <tr><td class="table_txt_align_left">Head & Neck</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+			    <tr><td class="table_txt_align_left">Eyes</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+				<tr><td class="table_txt_align_left">Ears, Nose, Throat</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+				<tr><td class="table_txt_align_left">Teeth / Oral Cavity</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+				<tr><td class="table_txt_align_left">Musculo-Skeletal system</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+				<tr><td class="table_txt_align_left">Nervous System</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+				<tr><td class="table_txt_align_left">Reflexes</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+				<tr><td class="table_txt_align_left">Skin</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+				
+			</table>
+        
+		</div>
+	</div>	
+	 </div>
+	 
+	 <div class="col-lg-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">Systematic Examination</div>
+					<div class="panel-body">
+            <table class="dist_vis_table">
+			
+			  <tr><td></td><td>Normal</td><td>Abnormal</td></tr>
+			   <tr><td class="table_txt_align_left">Respiratory system</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+			    <tr><td class="table_txt_align_left">Cardiovascular system</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+				<tr><td class="table_txt_align_left">Per Abdomen</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+				<tr><td class="table_txt_align_left">Genito-urinary system</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+				<tr><td class="table_txt_align_left">Others</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+				<tr><td class="table_txt_align_left">Hernia / Hydrocoele</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+				<tr><td class="table_txt_align_left">Varicose Veins</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+				<tr><td class="table_txt_align_left">Fissure/Fistula/Piles</td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
+			</table>
+        
+		</div>
+	</div>	
+	 </div>
+ 
+	 </div>
+	  
+	  
+	   <div class="row">
+		<div class="col-lg-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">Notes</div>
+					<div class="panel-body">
+           
+		   
+		   <div class="med_notes_text">
+					<span class="med_span1">TO WHOM SO EVER IT MAY CONCERN</span>
+					<span class="med_span3">I confirm that the declaration above is accurate, to the best of my knowledge. 
+					I further confirm that I will be solely liable l responsible for the consequences if the information declared by me above is found to be factually incorrect. I undertake to indemnify the owners and or the managers and I or agents of the vessel (forthwith and on demand) from all claims, losses, demands or expenses suffered by them on account of a mis-declaration by me ofthe Information above.
+					</span>
+					</div>
+        
+		</div>
+	</div>	
+	 </div>
+	
+	 </div>
+	  
+	  
+	  
+	  
+	  
+	  
+	  <div class="row">
+		<div class="col-lg-12">
+				<div class="panel panel-default">
+					
+					<div class="panel-body">
+ 
+     <div class="main_form">
+			        <div class="form_inner_med_exam"><label>ECG </label> <input type="text" name="Name" value=""  class="input_name" ></div>
+					 <div class="form_inner_med_exam"><label>TMT</label> <input type="text" name="Name" value="" class="input_name" ></div>
+					 <div class="form_inner_med_exam"><label>X-Ray</label> <input type="text" name="Name" value="" class="input_name" ></div>
+			   </div>
+			   
+  <div class="main_form margin_top">
+			        <div class="form_inner_med_exam"><label>Chest</label> <input type="text" name="Name" value=""  class="input_name" ></div>
+					<div class="form_inner_med_exam"><label>Spirometry</label> <input type="text" name="Name" value="" class="input_name" ></div>
+					 <div class="form_inner_med_exam"><label>Drugs of Abuse</label> <input type="text" name="Name" value="" class="input_name" ></div>
+			   </div>
+			   
+			    <div class="main_form margin_top">
+			     <div class="form_inner_med_exam"><label>USG</label> <input type="text" name="Name" value=""  class="input_name" ></div>
+				<div class="form_inner_med_exam"><label>Result of Medical Examination</label> <input type="text" name="Name" value="" class="input_name" ></div>
+			  </div>
+			</div>
+	</div>	
+	 </div>
+	   
+		
+	   </div>
+	   
+	   
+	   
+	   
+	   <div class="row">
+		<div class="col-lg-12">
+				<div class="panel panel-default">
+				
+					<div class="panel-body">
+              <div class="med_notes_text">
+				<span class="med_span2">On the basis of the examinee's history, clinical examination and diagnostic test, I Doctor's Name <strong style="font-family: 'Open Sans', sans-serif;">Dr. B.S. Bhatia</strong> hereby declare the examinee medically
+					</span>
+					</div>
+					
+        <div class="col-lg-12 margin_top">
+		 <div class="col-sm-1 padding_none med_fit"><span class="med_fit_span">Fit</span> <span class="med_fit_in"><input type="checkbox"></span></div>
+		   <div class="col-sm-1 padding_none med_fit"><span class="med_fit_span">Unfit</span> <span class="med_fit_in"> <input type="checkbox"></span></div>
+		   <div class="col-sm-2 padding_none med_fit"><span class="med_fit_span">Temporarily unfit</span><span class="med_fit_in"> <input type="checkbox"></span></div> 
+		   <div class="col-sm-2 padding_none med_fit"><span class="med_fit_span">Permanently unfit</span><span class="med_fit_in"> <input type="checkbox"></span></div>
+		   <div class="col-sm-4 padding_none med_fit"><span class="med_fit_span">Should be re-examined in</span>
+		  <span class="med_fit_in"> <input type="checkbox"></span> </div>
+		   <div class="col-sm-2 padding_none med_fit"><span class="med_fit_span">days / weeks / months</span> </div>
+		</div>
+		
+		</div>
+	</div>	
+	 </div>
+	
+	 </div>
+	 
+	 
+	 <div class="row">
+		<div class="col-lg-12">
+				<div class="panel panel-default">
+				 <div class="panel-heading">Remarks / Recommendations</div>
+					<div class="panel-body">
+             <textarea class="notes_textarea"></textarea>
+				</div>
+	</div>	
+	 </div>
+	
+	 </div>
+	 
+	 
+	 
+	 <div class="row">
+		<div class="col-lg-12">
+				<div class="panel panel-default">
+				
+					<div class="panel-body">
+              <div class="med_notes_text">
+				<span class="med_span2">I <strong style="font-family: 'Open Sans', sans-serif;"> Dr. B.S. Bhatia </strong>certify that all information required under Annexure E & F of M.S. (Medical Examination) Rules 2000 is incorporated in this certificate.
+					</span>
+					<div class="certified_div">
+					<span>This certificte is valid till </span><input type="text" name="Name" value=""></div>
+					</div>
+					
+       	</div>
+	</div>	
+	 </div>
+	
+	 </div>
+	 
+	   
+	 
+	 
+      <!--./row-->
+      
+      <!-- .right-sidebar -->
+      <div class="right-sidebar">
+        <div class="slimscrollright">
+          <div class="rpanel-title"> Service Panel <span><i class="ti-close right-side-toggle"></i></span> </div>
+          <div class="r-panel-body">
+            <ul>
+              <li><b>Layout Options</b></li>
+              <li>
+                <div class="checkbox checkbox-info">
+                  <input id="checkbox1" type="checkbox" class="fxhdr">
+                  <label for="checkbox1"> Fix Header </label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox checkbox-warning">
+                  <input id="checkbox2" type="checkbox" checked="" class="fxsdr">
+                  <label for="checkbox2"> Fix Sidebar </label>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox checkbox-success">
+                  <input id="checkbox4" type="checkbox" class="open-close">
+                  <label for="checkbox4" > Toggle Sidebar </label>
+                </div>
+              </li>
+            </ul>
+            <ul id="themecolors" class="m-t-20">
+              <li><b>With Light sidebar</b></li>
+              <li><a href="javascript:void(0)" theme="default" class="default-theme working">1</a></li>
+              <li><a href="javascript:void(0)" theme="green" class="green-theme">2</a></li>
+              <li><a href="javascript:void(0)" theme="gray" class="yellow-theme">3</a></li>
+              <li><a href="javascript:void(0)" theme="blue" class="blue-theme">4</a></li>
+              <li><a href="javascript:void(0)" theme="purple" class="purple-theme">5</a></li>
+              <li><a href="javascript:void(0)" theme="megna" class="megna-theme">6</a></li>
+              <li><b>With Dark sidebar</b></li>
+              <br/>
+              <li><a href="javascript:void(0)" theme="default-dark" class="default-dark-theme">7</a></li>
+              <li><a href="javascript:void(0)" theme="green-dark" class="green-dark-theme">8</a></li>
+              <li><a href="javascript:void(0)" theme="gray-dark" class="yellow-dark-theme">9</a></li>
+              <li><a href="javascript:void(0)" theme="blue-dark" class="blue-dark-theme">10</a></li>
+              <li><a href="javascript:void(0)" theme="purple-dark" class="purple-dark-theme">11</a></li>
+              <li><a href="javascript:void(0)" theme="megna-dark" class="megna-dark-theme">12</a></li>
+            </ul>
+            <ul class="m-t-20 chatonline">
+              <li><b>Chat option</b></li>
+              <li><a href="javascript:void(0)"><img src="plugins/images/users/varun.jpg" alt="user-img" class="img-circle"> <span>Varun Dhavan <small class="text-success">online</small></span></a></li>
+              <li><a href="javascript:void(0)"><img src="plugins/images/users/genu.jpg" alt="user-img"  class="img-circle"> <span>Genelia Deshmukh <small class="text-warning">Away</small></span></a></li>
+              <li><a href="javascript:void(0)"><img src="plugins/images/users/ritesh.jpg" alt="user-img"  class="img-circle"> <span>Ritesh Deshmukh <small class="text-danger">Busy</small></span></a></li>
+              <li><a href="javascript:void(0)"><img src="plugins/images/users/arijit.jpg" alt="user-img" class="img-circle"> <span>Arijit Sinh <small class="text-muted">Offline</small></span></a></li>
+              <li><a href="javascript:void(0)"><img src="plugins/images/users/govinda.jpg" alt="user-img" class="img-circle"> <span>Govinda Star <small class="text-success">online</small></span></a></li>
+              <li><a href="javascript:void(0)"><img src="plugins/images/users/hritik.jpg" alt="user-img" class="img-circle"> <span>John Abraham<small class="text-success">online</small></span></a></li>
+              <li><a href="javascript:void(0)"><img src="plugins/images/users/john.jpg" alt="user-img" class="img-circle"> <span>Hritik Roshan<small class="text-success">online</small></span></a></li>
+              <li><a href="javascript:void(0)"><img src="plugins/images/users/pawandeep.jpg" alt="user-img" class="img-circle"> <span>Pwandeep rajan <small class="text-success">online</small></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- /.right-sidebar -->
+    </div>
+    <!-- /.container-fluid -->
+    <footer class="footer text-center"> 2016 &copy; Admin brought to you by Orpins </footer>
+  </div>
+  <!-- /#page-wrapper -->
+</div>
+<!-- /#wrapper -->
+<!-- jQuery -->
+<script src="plugins/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Menu Plugin JavaScript -->
+<script src="plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+<!--slimscroll JavaScript -->
+<script src="js/jquery.slimscroll.js"></script>
+<!--Wave Effects -->
+<script src="js/waves.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="js/custom.min.js"></script>
+<script src="js/jasny-bootstrap.js"></script>
+<!--Style Switcher -->
+<script src="plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+</body>
+</html>
